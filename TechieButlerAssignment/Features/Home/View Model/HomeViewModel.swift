@@ -15,7 +15,9 @@ final class HomeViewModel: ObservableObject {
     
     // MARK: - Initializer
     init() {
-        self.getPostBatch()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.getPostBatch()
+        }
     }
     
     // MARK: - Functions
