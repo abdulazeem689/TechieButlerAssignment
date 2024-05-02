@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		756CAFA62BE26D5F00037B71 /* TechieButlerAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CAFA52BE26D5F00037B71 /* TechieButlerAssignmentApp.swift */; };
-		756CAFA82BE26D5F00037B71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CAFA72BE26D5F00037B71 /* ContentView.swift */; };
+		756CAFA82BE26D5F00037B71 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CAFA72BE26D5F00037B71 /* HomeView.swift */; };
 		756CAFAA2BE26D6200037B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756CAFA92BE26D6200037B71 /* Assets.xcassets */; };
 		756CAFAD2BE26D6200037B71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756CAFAC2BE26D6200037B71 /* Preview Assets.xcassets */; };
+		756CAFB92BE26E6300037B71 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CAFB82BE26E6300037B71 /* HomeViewModel.swift */; };
+		756CAFBC2BE26EE600037B71 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CAFBB2BE26EE600037B71 /* PostModel.swift */; };
+		756CAFBF2BE26FFB00037B71 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CAFBE2BE26FFB00037B71 /* RequestHandler.swift */; };
+		756CAFC32BE2B80200037B71 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CAFC22BE2B80200037B71 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		756CAFA22BE26D5F00037B71 /* TechieButlerAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechieButlerAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756CAFA52BE26D5F00037B71 /* TechieButlerAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechieButlerAssignmentApp.swift; sourceTree = "<group>"; };
-		756CAFA72BE26D5F00037B71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		756CAFA72BE26D5F00037B71 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		756CAFA92BE26D6200037B71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		756CAFAC2BE26D6200037B71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		756CAFB82BE26E6300037B71 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		756CAFBB2BE26EE600037B71 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		756CAFBE2BE26FFB00037B71 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		756CAFC22BE2B80200037B71 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		756CAFA42BE26D5F00037B71 /* TechieButlerAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				756CAFA52BE26D5F00037B71 /* TechieButlerAssignmentApp.swift */,
-				756CAFA72BE26D5F00037B71 /* ContentView.swift */,
+				756CAFB32BE26DBF00037B71 /* App */,
+				756CAFB42BE26DCC00037B71 /* Features */,
+				756CAFBD2BE26FE000037B71 /* Helpers */,
 				756CAFA92BE26D6200037B71 /* Assets.xcassets */,
 				756CAFAB2BE26D6200037B71 /* Preview Content */,
 			);
@@ -65,6 +74,81 @@
 				756CAFAC2BE26D6200037B71 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		756CAFB32BE26DBF00037B71 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFA52BE26D5F00037B71 /* TechieButlerAssignmentApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		756CAFB42BE26DCC00037B71 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFB52BE26DE400037B71 /* Home */,
+				756CAFC02BE2B7E300037B71 /* Detail */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		756CAFB52BE26DE400037B71 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFBA2BE26EC100037B71 /* Model */,
+				756CAFB62BE26DF100037B71 /* View */,
+				756CAFB72BE26E4700037B71 /* View Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		756CAFB62BE26DF100037B71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFA72BE26D5F00037B71 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		756CAFB72BE26E4700037B71 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFB82BE26E6300037B71 /* HomeViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		756CAFBA2BE26EC100037B71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFBB2BE26EE600037B71 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		756CAFBD2BE26FE000037B71 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFBE2BE26FFB00037B71 /* RequestHandler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		756CAFC02BE2B7E300037B71 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFC12BE2B7EF00037B71 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		756CAFC12BE2B7EF00037B71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				756CAFC22BE2B80200037B71 /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756CAFA82BE26D5F00037B71 /* ContentView.swift in Sources */,
+				756CAFA82BE26D5F00037B71 /* HomeView.swift in Sources */,
+				756CAFC32BE2B80200037B71 /* DetailView.swift in Sources */,
+				756CAFBF2BE26FFB00037B71 /* RequestHandler.swift in Sources */,
+				756CAFBC2BE26EE600037B71 /* PostModel.swift in Sources */,
+				756CAFB92BE26E6300037B71 /* HomeViewModel.swift in Sources */,
 				756CAFA62BE26D5F00037B71 /* TechieButlerAssignmentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
